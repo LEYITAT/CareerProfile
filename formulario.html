@@ -11,45 +11,41 @@
 
         <fieldset>
             <legend>Información Personal</legend>
-            <section>
+            <div>
                 <label for="nombre_completo">Nombre Completo:</label><br>
                 <input type="text" id="nombre_completo" name="nombre_completo" required><br><br>
-            </section>
-
-            <section>
-                <label for="email_usuario">Correo Electrónico:</label><br>
+            </div>
+            <div>
+                 <label for="email_usuario">Correo Electrónico:</label><br>
                 <input type="email" id="email_usuario" name="email_usuario" required><br><br>
-            </section>
-
-            <section>
+            </div>    
+            <div> 
                 <label for="contrasena">Contraseña:</label><br>
                 <input type="password" id="contrasena" name="contrasena" required><br><br>
-            </section>
-
-            <section>
+            </div>
+               <div>
                 <label for="edad_usuario">Edad:</label><br>
                 <input type="number" id="edad_usuario" name="edad_usuario" min="1" max="120" required><br><br>
-            </section>
-
-            <section>
-                <label for="genero_usuario">Género:</label><br>
+            </div>
+                <div>
+                    <label for="genero_usuario">Género:</label><br>
                 <select id="genero_usuario" name="genero_usuario" required>
                     <option value="">-- Seleccione una opción --</option>
                     <option value="masculino">Masculino</option>
                     <option value="femenino">Femenino</option>
                     <option value="otro">Otro</option>
                 </select><br><br>
-            </section>
-
-            <section>
-                <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+            </div>
+            <div>
+                 <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
                 <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
-            </section>
+            </div>
+               
         </fieldset>
 
         <fieldset>
             <legend>Intereses y Pasatiempos</legend>
-            <section>
+            <div>
                 <p>Marque sus intereses:</p>
                 <div>
                     <input type="checkbox" id="interes_tecnologia" name="intereses[]" value="tecnologia">
@@ -67,26 +63,34 @@
                     <input type="checkbox" id="interes_viajes" name="intereses[]" value="viajes">
                     <label for="interes_viajes">Viajes</label><br><br>
                 </div>
-            </section>
+            </div>
+                
         </fieldset>
 
         <fieldset>
             <legend>Información Adicional</legend>
-            <section>
+            <div>
                 <label for="comentarios">Comentarios o información adicional:</label><br>
                 <textarea id="comentarios" name="comentarios" rows="7" minlength="200" maxlength="1000"></textarea><br><br>
-            </section>
+            </div>
+    
         </fieldset>
 
         <section>
             <input type="checkbox" id="aceptar_terminos" name="aceptar_terminos" required>
             <label for="aceptar_terminos">Acepto los términos y condiciones</label><br><br>
         </section>
-
-        <footer>
+       
+        <div>
             <button type="reset">Restablecer Campos</button>
             <button type="submit">Enviar Registro</button>
-        </footer>
+        </div>
+            
+
     </form>
+            
+           <footer>
+            <p>2025 Formulario de Registro. Todos los derechos reservados.</p>
+        </footer>
 </body>
 </html>
